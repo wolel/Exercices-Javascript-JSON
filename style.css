@@ -1,0 +1,57 @@
+*{box-sizing: border-box}
+body{
+    background-color: rgb(0,121,107);
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+h1{
+    font-size: 240px;
+}
+.image{
+    width: 1110px;
+    height: 500px;
+    background-color: darkgrey;
+}
+.header {
+    width: 300px;
+    top: 100px;
+    right: 50%;
+    bottom: 0;
+    left: 50%;
+    margin: 30px auto;
+    text-align: center;
+    font-size: 25px;
+}
+
+.ligne{
+border-bottom: 3px solid white;
+
+}
+.btn{
+    border-radius: 20px;
+    background-color:lightgrey;
+    color: white;
+    padding: 10px 20px;
+}
+.container{
+    position: absolute;
+    top: 180px;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    text-align: center;
+}
+.info{
+    font-size: 20px;
+    text-align: left;
+
+}
+.row{
+    background-color: rgba(127, 255, 212, 0.36);
+
+    right: 50%;
+    left: 50%;
+
+}
