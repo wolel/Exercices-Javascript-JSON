@@ -12,36 +12,56 @@
 </head>
 <body>
 
-<div class="header">
-    <div class="city">Name of the city</div>
-    <div class="ligne"></div>
-    <button class=" btn btn-primary">Validate</button>
-    <div class="date">26 februey 2019</div>
-</div>
-
 <div class="container">
+    <h2>Bruxelles</h2>
+    <form action="index.php" method="POST">
 
-       <div class="row">
-        <div class="col-sm-5">
-            <h1 class="degree">7°</h1>
-            <div class="col-sm-6">Longitude: xx</div>
-            <div class="col-sm-6">Latitude: xx</div>
+    <div class="row">
+        <div class="row">
+            <h2>Meteo</h2>
         </div>
+    </div>
 
-        <div class="col-sm-5">
-            <div class="info">Temp.max :x°</div>
-            <div class="info">Temp.min : x°</div>
-            <div class="info">Pres.atmosphérique : xx</div>
-            <div class="info">Vitesse du vent: xx km/h</div>
-            <div class="info">Humidité: xx %</div>
-        </div>
-
+    <div class="row">
+        <div class="col-lg-12">
+            <label for="ville">Ville</label>
+            <input type="text" id="ville" name="ville" placeholder="entrer votre ville">
+         </div>
      </div>
-    <div class ="image"><img src="#" alt=""></div>
+
+     <div class="row">
+         <div class="col-lg-12" id="btn">
+             <label for="ville">Ville</label>
+             <button type="submit" id="btn_ville">Valider</button>
+          </div>
+     </div>
+
+        <div class="row">
+                <div class="col-lg-12">
+                <label for="ville">Ville</label>
+                <div id="date">Date</div>
+            </div>
+
+        </div>
+            <div class="row">
+                <div class="col-lg-12">
+                <div class="infos" id="temp_max">Temp.max: x°</div>
+                <div class="infos" id="temp_min">Temp.min: x°</div>
+                <div class="infos" id="pres">pres.Atmosphérique: xx</div>
+                <div class="infos" id="wind">Vitesse du vent: xx km/h</div>
+                <div class="infos" id="humidite">Humidité: xx%</div>
+                </div>
+             </div>
+
+            <div class="row">
+                <div id="temp_actuelle">7°</div>
+            </div>
+
+            <div id="img">
+                <img src="" alt="image">
+            </div>
+    </form>
 </div>
-
-
-
 
 <script src="exercice.js"></script>
 </body>
