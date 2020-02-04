@@ -14,7 +14,7 @@
 
 <div class="container">
     <h2>Bruxelles</h2>
-    <form action="index.php" method="POST">
+
 
     <div class="row">
         <div class="row">
@@ -25,14 +25,13 @@
     <div class="row">
         <div class="col-lg-12">
             <label for="ville">Ville</label>
-            <input type="text" id="ville" name="ville" placeholder="entrer votre ville">
+            <input type="text" id="ville" placeholder="entrer votre ville">
          </div>
      </div>
 
      <div class="row">
-         <div class="col-lg-12" id="btn">
-             <label for="ville">Ville</label>
-             <button type="submit" id="btn_ville">Valider</button>
+         <div>
+           <button id="btn_ville">Valider</button>
           </div>
      </div>
 
@@ -45,9 +44,9 @@
         </div>
             <div class="row">
                 <div class="col-lg-12">
-                <div class="infos" id="temp_max">Temp.max: x°</div>
-                <div class="infos" id="temp_min">Temp.min: x°</div>
-                <div class="infos" id="pres">pres.Atmosphérique: xx</div>
+                <div class="infos" id="tempMax">Temp.max: x°</div>
+                <div class="infos" id="tempMin">Temp.min: x°</div>
+                <div class="infos" id="pressAtm">pres.Atmosphérique: xx</div>
                 <div class="infos" id="wind">Vitesse du vent: xx km/h</div>
                 <div class="infos" id="humidite">Humidité: xx%</div>
                 </div>
@@ -60,7 +59,7 @@
             <div id="img">
                 <img src="" alt="image">
             </div>
-    </form>
+
 </div>
 
 <script src="exercice.js"></script>
