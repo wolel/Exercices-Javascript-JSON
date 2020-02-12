@@ -20,17 +20,17 @@ function start() {
             var json = JSON.parse(this.responseText);
             console.log(json);
             let date = new Date( json.timezone*1000);
+            let tab = ['jan','fevr','mars', 'avril', 'mai','juin','juillet', 'aout', 'sept','oct','nove','dec'];
+            let month = tab[date.getMonth()];
 
-                document.getElementById('date').innerHTML = date;
-                document.getElementById('ville').innerHTML = "Ville: " + json.name;
-                document.getElementById('tempMax').innerHTML = "Température max : " + Math.round(json.main.temp_max) + "°C";
-                document.getElementById('tempMin').innerHTML = "Température min : " + Math.round(json.main.temp_min) + "°C";
-                document.getElementById('pressAtm').innerHTML = "Pression atmosphérique : " + json.main.pressure + " Pa";
-                document.getElementById('wind').innerHTML = "Vitesse du vent : " + json.wind.speed + " km/h";
-                document.getElementById('humidite').innerHTML = "Humidité : " + json.main.humidity + " %";
-
-
-
+            document.getElementById('date').innerHTML = "Date :" + date+ "</div>";
+            document.getElementById('ville').innerHTML = "Ville: " + json.name;
+            document.getElementById('temp').innerHTML = Math.round(json.main.temp) + "°";
+            document.getElementById('tempMax').innerHTML = "Température max : " + Math.round(json.main.temp_max) + "°C";
+            document.getElementById('tempMin').innerHTML = "Température min : " + Math.round(json.main.temp_min) + "°C";
+            document.getElementById('pressAtm').innerHTML = "Pression atmosphérique : " + json.main.pressure + " Pa";
+            document.getElementById('wind').innerHTML = "Vitesse du vent : " + json.wind.speed + " km/h";
+            document.getElementById('humidite').innerHTML = "Humidité : " + json.main.humidity + " %";
 
 
         }
@@ -40,4 +40,4 @@ function start() {
     console.log(xhttp.open);
     xhttp.send();
 }
-    btn.addEventListener('click', start);
+btn.addEventListener('click', start);

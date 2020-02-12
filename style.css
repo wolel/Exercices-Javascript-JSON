@@ -4,23 +4,92 @@ body{
     margin: 0;
     padding: 0;
     color: white;
+
 }
-#img{
-    width: 900px;
-    height: 400px;
-    background-color: white;
-    border: none;
-    position: absolute;
-    top: 300px;
+/*==============================*/
+#header h1{
+    font-size: 75px;
+    margin-bottom: -30px;
+}
+#header{
+    margin: auto;
+    width: 600px;
+    height: 200px;
+    top: 0;
     right: 0;
     bottom: 0;
     left: 0;
-    margin: auto;
+    text-align: center;
 
 }
-.container{
+#header img{
+    width: 40%;
+}
+#header div{
+    float: right;
+}
+
+#header input{
+    width: 400px;
+    padding: 8px 10px 8px 10px;
+    font-size: 15px;
+}
+#header button{
+    margin: 20px;
+    color: #333;
+    padding: 10px 40px 10px 40px;
+    background-color: white;
+    border: none;
+    transform: scale(1);
+}
+#header button:hover{
+    color: #4d430a;
+    font-weight: bold;
+    background-color: #ffe607;
+}
+#header button:active{
+    background-color: #ffdf20;
+    transform: scale(.97);
+    transition: transform .4s;
+}
+/*==============================*/
+.cont{
+margin-bottom: 50px;
+    margin-top: 180px;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 
 }
-h1{
-    font-size: 75px;
+.container0{
+    width: 200px;
+    height: 300px;
+    font-size: 170px;
 }
+.container1{
+    width: 400px;
+    height: 300px;
+    padding: 20px;
+    float:left;
+}
+.infos{
+    font-size: 18px;
+    padding: 5px;
+    letter-spacing: 2px;
+}
+#date{
+    font-size: 25px;
+}
+h3{
+    font-size: 17px;
+}
+.container2 img{
+    width: 80%;
+    float:right;
+}
+
+
+

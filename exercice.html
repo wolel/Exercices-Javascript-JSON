@@ -11,57 +11,36 @@
 
 </head>
 <body>
+    <div id="header">
+    <h1>Meteo</h1>
 
-<div class="container">
-    <h2>Bruxelles</h2>
+    <img src="meteo.png" alt=""><br>
+    <input type="text" id="ville" placeholder="entrer votre ville">
+    <button id="btn_ville">Valider</button>
 
-
-    <div class="row">
-        <div class="row">
-            <h2>Meteo</h2>
-        </div>
     </div>
 
-    <div class="row">
-        <div class="col-lg-12">
-            <label for="ville">Ville</label>
-            <input type="text" id="ville" placeholder="entrer votre ville">
-         </div>
-     </div>
+<div class="cont">
 
-     <div class="row">
-         <div>
-           <button id="btn_ville">Valider</button>
-          </div>
-     </div>
+    <div class="container0">
+        <span id="temp">7°</span>
+    </div>
 
-        <div class="row">
-                <div class="col-lg-12">
-                <label for="ville">Ville</label>
-                <div id="date">Date</div>
-            </div>
+    <div class="container1">
+            <h2></h2>
+            <div id="date">Date : </div>
+            <div class="infos" id="tempMax">Temp.max: </div>
+            <div class="infos" id="tempMin">Temp.min: </div>
+            <div class="infos" id="pressAtm">pres.Atmosphérique:</div>
+            <div class="infos" id="wind">Vitesse du vent:</div>
+            <div class="infos" id="humidite">Humidité:</div>
+    </div>
 
-        </div>
-            <div class="row">
-                <div class="col-lg-12">
-                <div class="infos" id="tempMax">Temp.max: x°</div>
-                <div class="infos" id="tempMin">Temp.min: x°</div>
-                <div class="infos" id="pressAtm">pres.Atmosphérique: xx</div>
-                <div class="infos" id="wind">Vitesse du vent: xx km/h</div>
-                <div class="infos" id="humidite">Humidité: xx%</div>
-                </div>
-             </div>
-
-            <div class="row">
-                <div id="temp_actuelle">7°</div>
-            </div>
-
-            <div id="img">
-                <img src="" alt="image">
-            </div>
+    <div class="container2">
+        <img src="carte.png" alt="">
+    </div>
 
 </div>
-
 <script src="exercice.js"></script>
 </body>
 </html>

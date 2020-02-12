@@ -34,4 +34,3 @@ curl_exec($ch);
 
 // fermeture des ressources
 curl_close($ch);
-
